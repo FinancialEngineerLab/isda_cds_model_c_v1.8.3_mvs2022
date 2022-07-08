@@ -9,5 +9,3 @@ This is the reason why I integrated the original C code (base on a pre 2007 vers
 The solution file is in /ISDA_ME
 
 xll files are in /ISDA_ME/(Configuration) for the x86 plateform and in /ISDA_ME/x64/(Configuration) for the x64 platform. The original "test" spreadsheet from http://www.cdsmodel.com/ is available in /ISDA_ME
-
-As you see the repo has (and will forever have) only one commit. If out of pure luck you manage to succeed in contacting me regarding this repository, I will not answer.
