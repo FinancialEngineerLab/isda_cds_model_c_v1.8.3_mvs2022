@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66C919D1-2B69-4641-B145-6AC2BB472FD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ISDA_ME</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_USRDLL;ISDA_ME_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName).xll</OutputFile>
+      <ModuleDefinitionFile>ISDA_ME.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ISDA_ME\EXCEL_SDK_LIB\Debug\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>XLCALL32.LIB;frmwrk32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;_USRDLL;ISDA_ME_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName).xll</OutputFile>
+      <ModuleDefinitionFile>ISDA_ME.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ISDA_ME\EXCEL_SDK_LIB\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>XLCALL32.LIB;frmwrk32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_USRDLL;ISDA_ME_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName).xll</OutputFile>
+      <ModuleDefinitionFile>ISDA_ME.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ISDA_ME\EXCEL_SDK_LIB\Release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>XLCALL32.LIB;frmwrk32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;_USRDLL;ISDA_ME_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName).xll</OutputFile>
+      <ModuleDefinitionFile>ISDA_ME.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)ISDA_ME\EXCEL_SDK_LIB\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>XLCALL32.LIB;frmwrk32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="badday.h" />
+    <ClInclude Include="bastypes.h" />
+    <ClInclude Include="bsearch.h" />
+    <ClInclude Include="buscache.h" />
+    <ClInclude Include="busday.h" />
+    <ClInclude Include="cashflow.h" />
+    <ClInclude Include="cdate.h" />
+    <ClInclude Include="cds.h" />
+    <ClInclude Include="cdsone.h" />
+    <ClInclude Include="cerror.h" />
+    <ClInclude Include="cfileio.h" />
+    <ClInclude Include="cfinanci.h" />
+    <ClInclude Include="cgeneral.h" />
+    <ClInclude Include="cheaders.h" />
+    <ClInclude Include="cmemory.h" />
+    <ClInclude Include="contingentleg.h" />
+    <ClInclude Include="convert.h" />
+    <ClInclude Include="cx.h" />
+    <ClInclude Include="cxbsearch.h" />
+    <ClInclude Include="cxdatelist.h" />
+    <ClInclude Include="cxzerocurve.h" />
+    <ClInclude Include="dateadj.h" />
+    <ClInclude Include="dateconv.h" />
+    <ClInclude Include="datelist.h" />
+    <ClInclude Include="date_sup.h" />
+    <ClInclude Include="defaulted.h" />
+    <ClInclude Include="dtlist.h" />
+    <ClInclude Include="feeleg.h" />
+    <ClInclude Include="fltrate.h" />
+    <ClInclude Include="FRAMEWRK.h" />
+    <ClInclude Include="gtozc.h" />
+    <ClInclude Include="interp.h" />
+    <ClInclude Include="ISDA_ME.h" />
+    <ClInclude Include="ldate.h" />
+    <ClInclude Include="lintrp.h" />
+    <ClInclude Include="lprintf.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="mdydate.h" />
+    <ClInclude Include="MemoryManager.h" />
+    <ClInclude Include="MemoryPool.h" />
+    <ClInclude Include="metric.h" />
+    <ClInclude Include="Objects.h" />
+    <ClInclude Include="rtbrent.h" />
+    <ClInclude Include="schedule.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="streamcf.h" />
+    <ClInclude Include="strutil.h" />
+    <ClInclude Include="stub.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tcurve.h" />
+    <ClInclude Include="timeline.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="XLCALL.h" />
+    <ClInclude Include="xlutils.h" />
+    <ClInclude Include="yearfrac.h" />
+    <ClInclude Include="zcprvt.h" />
+    <ClInclude Include="zcswdate.h" />
+    <ClInclude Include="zerocurve.h" />
+    <ClInclude Include="zr2coup.h" />
+    <ClInclude Include="zr2fwd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="badday.cpp" />
+    <ClCompile Include="bsearch.cpp" />
+    <ClCompile Include="buscache.cpp" />
+    <ClCompile Include="busday.cpp" />
+    <ClCompile Include="cashflow.cpp" />
+    <ClCompile Include="cds.cpp" />
+    <ClCompile Include="cdsbootstrap.cpp" />
+    <ClCompile Include="cdsone.cpp" />
+    <ClCompile Include="cerror.cpp" />
+    <ClCompile Include="cfileio.cpp" />
+    <ClCompile Include="cfinanci.cpp" />
+    <ClCompile Include="cmemory.cpp" />
+    <ClCompile Include="contingentleg.cpp" />
+    <ClCompile Include="convert.cpp" />
+    <ClCompile Include="cx.cpp" />
+    <ClCompile Include="cxbsearch.cpp" />
+    <ClCompile Include="cxdatelist.cpp" />
+    <ClCompile Include="cxzerocurve.cpp" />
+    <ClCompile Include="dateadj.cpp" />
+    <ClCompile Include="dateconv.cpp" />
+    <ClCompile Include="datelist.cpp" />
+    <ClCompile Include="date_sup.cpp" />
+    <ClCompile Include="defaulted.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dtlist.cpp" />
+    <ClCompile Include="feeleg.cpp" />
+    <ClCompile Include="fltrate.cpp" />
+    <ClCompile Include="gtozc.cpp" />
+    <ClCompile Include="interpc.cpp" />
+    <ClCompile Include="ISDA_ME.cpp" />
+    <ClCompile Include="ldate.cpp" />
+    <ClCompile Include="linterpc.cpp" />
+    <ClCompile Include="lintrp1.cpp" />
+    <ClCompile Include="lprintf.cpp" />
+    <ClCompile Include="lscanf.cpp" />
+    <ClCompile Include="MemoryManager.cpp" />
+    <ClCompile Include="MemoryPool.cpp" />
+    <ClCompile Include="Objects.cpp" />
+    <ClCompile Include="rtbrent.cpp" />
+    <ClCompile Include="schedule.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="streamcf.cpp" />
+    <ClCompile Include="strutil.cpp" />
+    <ClCompile Include="stub.cpp" />
+    <ClCompile Include="tcurve.cpp" />
+    <ClCompile Include="timeline.cpp" />
+    <ClCompile Include="version.cpp" />
+    <ClCompile Include="xlutils.cpp" />
+    <ClCompile Include="yearfrac.cpp" />
+    <ClCompile Include="zcall.cpp" />
+    <ClCompile Include="zcswap.cpp" />
+    <ClCompile Include="zcswdate.cpp" />
+    <ClCompile Include="zcswutil.cpp" />
+    <ClCompile Include="zerocurve.cpp" />
+    <ClCompile Include="zr2coup.cpp" />
+    <ClCompile Include="zr2fwd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bsearch.inc" />
+    <None Include="ISDA_ME.def" />
+    <None Include="lintrp1.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,27 @@
+﻿  
+  Microsoft (R) Program Maintenance Utility Version 14.00.24210.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  	cl /nologo /W3 /WX /EHsc /MD /Fo".\RELEASE\\" /I. /I"..\..\include" /I"..\..\src" /I"\VC\PlatformSDK\Include" /I"\VC\include" /D"WIN32" /D"_WINDOWS" /D"_MBCS" /D"_USRDLL" /D"FRAMEWORK_EXPORTS" /D"NDEBUG" /c MemoryManager.cpp
+  MemoryManager.cpp
+  	cl /nologo /W3 /WX /EHsc /MD /Fo".\RELEASE\\" /I. /I"..\..\include" /I"..\..\src" /I"\VC\PlatformSDK\Include" /I"\VC\include" /D"WIN32" /D"_WINDOWS" /D"_MBCS" /D"_USRDLL" /D"FRAMEWORK_EXPORTS" /D"NDEBUG" /c MemoryPool.cpp
+  MemoryPool.cpp
+  	cl /nologo /W3 /WX /EHsc /MD /Fo".\RELEASE\\" /I. /I"..\..\include" /I"..\..\src" /I"\VC\PlatformSDK\Include" /I"\VC\include" /D"WIN32" /D"_WINDOWS" /D"_MBCS" /D"_USRDLL" /D"FRAMEWORK_EXPORTS" /D"NDEBUG" /c FRAMEWRK.c
+  FRAMEWRK.c
+  	cd .\RELEASE
+  	lib.exe /nologo MemoryManager.obj  MemoryPool.obj  FRAMEWRK.obj /OUT:"frmwrk32.lib" /nodefaultlib
+  	cd .\..
+  	copy /Y .\RELEASE\"frmwrk32.lib" ..\..\lib
+  
+  C:\CODING\MY\2013 Office System Developer Resources\Excel2013XLLSDK\SAMPLES\FRAMEWRK>xcopy "\\software\software\Microsoft\activeX MSCOMCT2" "C:\Windows\SysWOW64" /Y 
+  \\software\software\Microsoft\activeX MSCOMCT2\copy.cmd
+  \\software\software\Microsoft\activeX MSCOMCT2\mscomct2.inf
+  \\software\software\Microsoft\activeX MSCOMCT2\mscomct2.ocx
+  3 fichier(s) copié(s)
+  	copy /Y ".\FRAMEWRK.H" "..\..\include\FRAMEWRK.H"
+  
+  C:\CODING\MY\2013 Office System Developer Resources\Excel2013XLLSDK\SAMPLES\FRAMEWRK>xcopy "\\software\software\Microsoft\activeX MSCOMCT2" "C:\Windows\SysWOW64" /Y 
+  \\software\software\Microsoft\activeX MSCOMCT2\copy.cmd
+  \\software\software\Microsoft\activeX MSCOMCT2\mscomct2.inf
+  \\software\software\Microsoft\activeX MSCOMCT2\mscomct2.ocx
+  3 fichier(s) copié(s)

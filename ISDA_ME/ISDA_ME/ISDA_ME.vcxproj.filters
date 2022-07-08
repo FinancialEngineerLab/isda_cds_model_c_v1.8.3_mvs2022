@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="EXCEL_SDK">
+      <UniqueIdentifier>{09b030ad-1a77-4fc7-8f47-c349c037d033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ISDA">
+      <UniqueIdentifier>{bfdca260-8f0d-4f1d-a73c-b8d273c1eddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ISDA\include">
+      <UniqueIdentifier>{0a5fa08b-1ac8-4ce7-bf0c-f94228e3c2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ISDA\src">
+      <UniqueIdentifier>{7d92edfd-6db8-46d1-aeab-9a21f0b6feaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EXCEL_SDK_HELPER_FUNCTIONS">
+      <UniqueIdentifier>{ecd99681-3f30-4f24-8a37-e132b86fc472}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XLCALL.h">
+      <Filter>EXCEL_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="FRAMEWRK.h">
+      <Filter>EXCEL_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager.h">
+      <Filter>EXCEL_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.h">
+      <Filter>EXCEL_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="ISDA_ME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badday.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="bastypes.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="bsearch.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="buscache.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="busday.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cashflow.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cdate.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cds.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cdsone.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cerror.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cfileio.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cfinanci.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cgeneral.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cheaders.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cmemory.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="contingentleg.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="convert.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cx.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cxbsearch.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cxdatelist.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cxzerocurve.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="date_sup.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dateadj.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dateconv.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="datelist.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="defaulted.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dtlist.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="feeleg.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fltrate.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="gtozc.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="interp.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ldate.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="lintrp.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="lprintf.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="mdydate.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="metric.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="rtbrent.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="streamcf.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="strutil.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="stub.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="tcurve.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="timeline.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="yearfrac.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="zcprvt.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="zerocurve.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="zr2coup.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="zr2fwd.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="zcswdate.h">
+      <Filter>ISDA\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects.h">
+      <Filter>EXCEL_SDK_HELPER_FUNCTIONS</Filter>
+    </ClInclude>
+    <ClInclude Include="xlutils.h">
+      <Filter>EXCEL_SDK_HELPER_FUNCTIONS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ISDA_ME.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManager.cpp">
+      <Filter>EXCEL_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryPool.cpp">
+      <Filter>EXCEL_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="badday.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="bsearch.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="buscache.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="busday.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cashflow.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cds.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cdsbootstrap.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cdsone.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cerror.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cfileio.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cmemory.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="contingentleg.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cx.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cxbsearch.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cxdatelist.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cxzerocurve.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="date_sup.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dateadj.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dateconv.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="datelist.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="defaulted.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dtlist.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="feeleg.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="fltrate.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="gtozc.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="interpc.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ldate.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="linterpc.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lintrp1.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lprintf.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lscanf.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="rtbrent.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="schedule.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="streamcf.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="strutil.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="stub.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="tcurve.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="timeline.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="yearfrac.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zcall.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zcswap.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zcswdate.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zcswutil.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zerocurve.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zr2coup.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zr2fwd.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cfinanci.cpp">
+      <Filter>ISDA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects.cpp">
+      <Filter>EXCEL_SDK_HELPER_FUNCTIONS</Filter>
+    </ClCompile>
+    <ClCompile Include="xlutils.cpp">
+      <Filter>EXCEL_SDK_HELPER_FUNCTIONS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ISDA_ME.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="bsearch.inc">
+      <Filter>ISDA\src</Filter>
+    </None>
+    <None Include="lintrp1.inc">
+      <Filter>ISDA\src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

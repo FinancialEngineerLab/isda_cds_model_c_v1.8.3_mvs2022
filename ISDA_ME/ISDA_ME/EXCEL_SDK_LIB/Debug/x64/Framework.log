@@ -1,0 +1,24 @@
+﻿  
+  Microsoft (R) Program Maintenance Utility Version 14.00.24210.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  	cl /nologo /Od /W3 /WX /EHsc /Zi /MDd /Fd".\x64\DEBUG\FRAMEWRK.pdb" /Fo".\x64\DEBUG\\" /I. /I"..\..\include" /I"..\..\src" /I"\VC\PlatformSDK\Include" /I"\VC\include" /D"WIN32" /D"_WINDOWS" /D"_MBCS" /D"_USRDLL" /D"FRAMEWORK_EXPORTS" /D"_DEBUG" /c MemoryManager.cpp
+  MemoryManager.cpp
+  	cl /nologo /Od /W3 /WX /EHsc /Zi /MDd /Fd".\x64\DEBUG\FRAMEWRK.pdb" /Fo".\x64\DEBUG\\" /I. /I"..\..\include" /I"..\..\src" /I"\VC\PlatformSDK\Include" /I"\VC\include" /D"WIN32" /D"_WINDOWS" /D"_MBCS" /D"_USRDLL" /D"FRAMEWORK_EXPORTS" /D"_DEBUG" /c MemoryPool.cpp
+  MemoryPool.cpp
+  	cl /nologo /Od /W3 /WX /EHsc /Zi /MDd /Fd".\x64\DEBUG\FRAMEWRK.pdb" /Fo".\x64\DEBUG\\" /I. /I"..\..\include" /I"..\..\src" /I"\VC\PlatformSDK\Include" /I"\VC\include" /D"WIN32" /D"_WINDOWS" /D"_MBCS" /D"_USRDLL" /D"FRAMEWORK_EXPORTS" /D"_DEBUG" /c FRAMEWRK.c
+  FRAMEWRK.c
+  	cd .\x64\DEBUG
+  	lib.exe /nologo MemoryManager.obj  MemoryPool.obj  FRAMEWRK.obj /OUT:"frmwrk32.lib" /nodefaultlib
+  	cd .\..\..
+  	copy /Y .\x64\DEBUG\"frmwrk32.lib" ..\..\lib\x64
+  
+  D:\CODAGE\BB_REPOS\MY\lfiscncppxll\Excel2013XLLSDK\SAMPLES\FRAMEWRK>xcopy "\\software\software\Microsoft\activeX MSCOMCT2" "C:\Windows\SysWOW64" /Y 
+  Access denied
+  Unable to create directory - C:\Windows\SysWOW64
+  0 File(s) copied
+NMAKE : fatal error U1077: 'C:\WINDOWS\system32\copy.CMD' : return code '0x4'
+  Stop.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3073: The command "SET TYPE=DEBUG
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3073: SET PLATFORM=x64
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3073: nmake -f makefile all" exited with code 2.

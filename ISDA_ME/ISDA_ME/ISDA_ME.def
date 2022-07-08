@@ -1,0 +1,32 @@
+LIBRARY ISDA_ME
+
+EXPORTS
+
+       ; Standard XLL functions
+       xlAutoOpen
+       xlAutoClose
+       xlAutoRegister12
+       xlAutoAdd
+       xlAutoRemove
+       xlAddInManagerInfo12
+	   xloper_type_str
+
+	   ; ISDA
+	   CDS_Version					; 0
+	   CDS_ErrorLogStatus			; 0
+	   CDS_ErrorLogContents			; 0
+	   CDS_ErrorLogFilename			; 0
+	   CDS_SetErrorLogFilename		; 2
+	   CDS_SetErrorLogStatus		; 1
+	   CDS_LoadHolidays				; 2
+	   CDS_IRZeroCurveBuild			; 12
+	   CDS_IRZeroCurveMake			; 7
+	   CDS_CleanSpreadCurveBuild	; 16
+	   CDS_DiscountFactor			; 2
+	   CDS_DatesAndRates			; 1
+	   CDS_UpfrontFlat				; 17
+	   CDS_ParSpreadFlat			; 17
+	   CDS_CdsPrice					; 16
+	   CDS_ParSpreads				; 13
+	   CDS_FeeLegFlows				; 9
+	   CDS_DefaultAccrual			; 11

@@ -1,0 +1,73 @@
+﻿  stdafx.cpp
+  badday.cpp
+  bsearch.cpp
+  buscache.cpp
+  busday.cpp
+  cashflow.cpp
+  cds.cpp
+  cdsbootstrap.cpp
+  cdsone.cpp
+  cerror.cpp
+  cfileio.cpp
+  cfinanci.cpp
+  cmemory.cpp
+  contingentleg.cpp
+D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\ISDA_ME\contingentleg.cpp(91,9): warning C4804: '>': unsafe use of type 'bool' in operation
+D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\ISDA_ME\contingentleg.cpp(98,9): warning C4804: '>': unsafe use of type 'bool' in operation
+  convert.cpp
+  cx.cpp
+  cxbsearch.cpp
+  cxdatelist.cpp
+  cxzerocurve.cpp
+  dateadj.cpp
+  dateconv.cpp
+  Generating Code...
+  Compiling...
+  datelist.cpp
+  date_sup.cpp
+  defaulted.cpp
+D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\ISDA_ME\defaulted.cpp(39,11): warning C4101: 'accrualEndDateAdj': unreferenced local variable
+D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\ISDA_ME\defaulted.cpp(38,11): warning C4101: 'accrualStartDateAdj': unreferenced local variable
+  dtlist.cpp
+  feeleg.cpp
+D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\ISDA_ME\feeleg.cpp(101,13): warning C4804: '>': unsafe use of type 'bool' in operation
+D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\ISDA_ME\feeleg.cpp(108,13): warning C4804: '>': unsafe use of type 'bool' in operation
+  fltrate.cpp
+  gtozc.cpp
+  interpc.cpp
+  ISDA_ME.cpp
+  ldate.cpp
+  linterpc.cpp
+  lintrp1.cpp
+  lprintf.cpp
+  lscanf.cpp
+  MemoryManager.cpp
+  MemoryPool.cpp
+  Objects.cpp
+  rtbrent.cpp
+  schedule.cpp
+  streamcf.cpp
+  Generating Code...
+  Compiling...
+  strutil.cpp
+  stub.cpp
+  tcurve.cpp
+  timeline.cpp
+  version.cpp
+  xlutils.cpp
+D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\ISDA_ME\xlutils.cpp(289,21): warning C4267: '=': conversion from 'size_t' to 'CHAR', possible loss of data
+  yearfrac.cpp
+  zcall.cpp
+  zcswap.cpp
+  zcswdate.cpp
+  zcswutil.cpp
+  zerocurve.cpp
+  zr2coup.cpp
+  zr2fwd.cpp
+  Generating Code...
+  dllmain.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1371,5): warning MSB8012: TargetPath(D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\Debug\ISDA_ME.dll) does not match the Linker's OutputFile property value (D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\Debug\ISDA_ME.xll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1372,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.xll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\Debug\ISDA_ME.lib and object D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\Debug\ISDA_ME.exp
+ISDA_ME.exp : warning LNK4070: /OUT:ISDA_ME.dll directive in .EXP differs from output filename 'D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\Debug\ISDA_ME.xll'; ignoring directive
+  ISDA_ME.vcxproj -> D:\CODING\GH_REPOS\isda_cds_model_c_v1.8.2_mvs2015\ISDA_ME\Debug\ISDA_ME.dll
